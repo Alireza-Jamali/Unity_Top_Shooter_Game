@@ -13,6 +13,7 @@ namespace Data
     {
         private readonly HttpClient _httpClient = new();
         private const string BaseUrl = "http://www.profc.ir/users/shooterWaves/";
+        const string dummyJson = "{\"ok\":1,\"data\":{\"waves\":[{\"enemy\":[{\"type\":1,\"count\":4},{\"type\":2,\"count\":2},{\"type\":3,\"count\":1}]},{\"enemy\":[{\"type\":1,\"count\":8},{\"type\":2,\"count\":4},{\"type\":3,\"count\":2}]},{\"enemy\":[{\"type\":1,\"count\":15},{\"type\":2,\"count\":7},{\"type\":3,\"count\":10}]}]}}";
 
         public async Task<List<WaveConfiguration>> GetWaveConfigurationsAsync()
         {

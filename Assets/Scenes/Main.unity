@@ -507,11 +507,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1578990924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9062508392029574269, guid: f5c49306fc6537c40ac1f4ae14d95787, type: 3}
+  m_PrefabInstance: {fileID: 9062508392081962198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1816510556 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9062508393495753866, guid: f5c49306fc6537c40ac1f4ae14d95787, type: 3}
   m_PrefabInstance: {fileID: 9062508392081962198}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983304436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9062508392954609096, guid: f5c49306fc6537c40ac1f4ae14d95787, type: 3}
+  m_PrefabInstance: {fileID: 9062508392081962198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1401364512754789629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -520,6 +542,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85638927246459537, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: _eventSystem
+      value: 
+      objectReference: {fileID: 1578990924}
+    - target: {fileID: 85638927246459537, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: mouseInputToggle
+      value: 
+      objectReference: {fileID: 1368477034}
+    - target: {fileID: 85638927246459537, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: touchInputToggle
+      value: 
+      objectReference: {fileID: 1075920013}
+    - target: {fileID: 85638927246459537, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: _graphicRaycaster
+      value: 
+      objectReference: {fileID: 1983304436}
     - target: {fileID: 1401364512075782496, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
       propertyPath: m_Name
       value: InputHandler
@@ -573,6 +611,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1368477034}
     - target: {fileID: 1401364512075782499, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: touchInputToggle
+      value: 
+      objectReference: {fileID: 1075920013}
+    - target: {fileID: 8737197631366652050, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
+      propertyPath: mouseInputToggle
+      value: 
+      objectReference: {fileID: 1368477034}
+    - target: {fileID: 8737197631366652050, guid: 4b02333acdadecc41b639b82b6691cd8, type: 3}
       propertyPath: touchInputToggle
       value: 
       objectReference: {fileID: 1075920013}
@@ -658,6 +704,42 @@ PrefabInstance:
     - target: {fileID: 1452228373790856477, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
       propertyPath: m_Name
       value: Weapon Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092944337599483357, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092944337599483357, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2092944337599483357, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411396953649345829, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411396953649345829, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411396953649345829, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357447157396769245, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357447157396769245, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5357447157396769245, guid: 79d787ff98fb4514cb2518f5cce83089, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
