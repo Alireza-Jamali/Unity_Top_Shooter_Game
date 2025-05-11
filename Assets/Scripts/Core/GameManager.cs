@@ -25,9 +25,13 @@ namespace Core
         protected override void Awake()
         {
             base.Awake();
+            InitializeServices();
+        }
+
+        void Start()
+        {
             mouseInputToggle.onValueChanged.AddListener(val => touchInputToggle.isOn = !val);
             touchInputToggle.onValueChanged.AddListener(val => mouseInputToggle.isOn = !val);
-            InitializeServices();
         }
 
         private void InitializeServices()

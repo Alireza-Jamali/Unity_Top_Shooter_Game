@@ -15,7 +15,7 @@ namespace Core
 
         public static Action<Vector2> OnAction;
 
-        void Awake()
+        void Start()
         {
             mouseInputToggle.onValueChanged.AddListener(val => touchInputToggle.isOn = !val);
             touchInputToggle.onValueChanged.AddListener(val => mouseInputToggle.isOn = !val);

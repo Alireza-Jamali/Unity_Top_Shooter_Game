@@ -18,7 +18,7 @@ namespace Player
         public static Action<IEnemy, float, float> OnPlayerHit;
         public static Action OnGameOver;
 
-        void Awake()
+        void Start()
         {
             _health = maxHealth;
             GameManager.OnRestart += RestartHealth;

@@ -21,14 +21,10 @@ namespace Weapons
         Vector3 _randomPosition = Vector3.zero;
         private bool _placeAmmo = false;
 
-        void Awake()
+        IEnumerator Start()
         {
             PlayerHealthManager.OnGameOver += () => _placeAmmo = false;
             GameManager.OnRestart += () => _placeAmmo = true;
-        }
-
-        IEnumerator Start()
-        {
             ServiceLocator.Get<IWaveManager>().OnWaveStarted += (_,_) => _placeAmmo = true;
             while (true)
             {

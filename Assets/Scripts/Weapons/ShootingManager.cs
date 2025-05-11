@@ -1,3 +1,4 @@
+using System;
 using Core;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -25,6 +26,10 @@ namespace Weapons
         {
             _mainCamera = Camera.main;
             weaponManager = GetComponent<WeaponManager>();
+        }
+
+        void Start()
+        {
             InputHandler.OnAction = ProcessShot;
         }
 

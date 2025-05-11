@@ -26,7 +26,7 @@ namespace Enemy
 
         bool _gameOvered;
 
-        void Awake()
+        void Start()
         {
             ServiceLocator.Get<IWaveManager>().OnWaveStarted += HandleOnWaveStarted;
             ServiceLocator.Get<IWaveManager>().OnWaveCompleted += HandleOnWaveCompleted;
@@ -41,6 +41,7 @@ namespace Enemy
                 StartCoroutine(CheckForEnemies());
                 return;
             }
+
             foreach (var enemy in waveConfig.ToArray()[currentWave].Enemies)
             {
                 for (int i = 0; i < enemy.Count; i++)
@@ -70,7 +71,11 @@ namespace Enemy
 
         IEnumerator WaveFinished()
         {
-            yield return new WaitForSeconds(7);
+            while (GameObject.FindWithTag(Tags.Enemy))
+            {
+                yield return new WaitForSeconds(2);
+            }
+
             ServiceLocator.Get<IWaveManager>().StopWave();
         }
 

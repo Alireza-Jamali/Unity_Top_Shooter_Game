@@ -23,8 +23,8 @@ namespace Weapons
         private IWeapon _basicWeapon;
         private IWeapon _sniperWeapon;
         private IWeapon _heatWeapon;
-
-        void Awake()
+        
+        void Start()
         {
             GameManager.OnRestart += OnRestart;
             _currentWeapon = _basicWeapon = new BasicWeapon(_projectilePool);
